@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ercode.film.SplashActivity"
+    android:background="#2db9ff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/bg_loading"
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_centerHorizontal="false"
+        android:layout_alignParentBottom="false"
+        android:layout_above="@+id/bg_bawah"
+        android:layout_height="40dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="false"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bg_bawah"
+        android:layout_height="50dp">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+
+        <ImageView
+            app:srcCompat="@drawable/icon"
+            android:id="@+id/imageView2"
+            android:layout_width="130dp"
+            android:layout_height="130dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/judul_splash"
+            android:id="@+id/imageView3"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
